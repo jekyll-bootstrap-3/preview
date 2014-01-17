@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Themes Gallery for Jekyll Bootstrap 3">
+    <meta name="keywords" content="themes, jekyll, bootstrap, jekyll-bootstrap-3">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.base_path }}{{ site.assets_path }}css/main.css">
-    <!-- Bootswatch -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/spacelab/bootstrap.min.css">
 
     <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}components/angular/angular.min.js"></script>
@@ -22,7 +22,41 @@
   <body>
 
     <div id="site" ng-controller="HomeCtrl">
-      {{ content }}
+      <div class="col-sm-3 col-md-2" id="sidebar">
+        <h1 style="padding-left: 5px;">Themes <small style="font-size: 14px">PREVIEW</small></h1>
+        <ul class="list-unstyled">
+
+          <li ng-repeat="theme in themes" ng-class="{ active: activeTheme == $index }">
+            <a href="#/theme/[[theme.name]]" ng-click="setTheme(theme.name);">
+              <span class="glyphicon glyphicon-expand"></span>
+              [[theme.name]]
+            </a>
+          </li>
+          <li ng-class="{ active: activeTheme == -1 }">
+            <a href="#/add">
+              <span class="glyphicon glyphicon-plus-sign"></span>
+              Add Your Theme
+            </a>
+          </li>
+        </ul>
+        <footer id="footer" class="footer container">
+          {{ site.time | date: "%Y" }} - {{ site.name }}
+          <br/>
+          <a href="https://jekyll-bootstrap-3.github.io">Jekyll Bootstrap 3</a>
+          &#8226;
+          <a href="https://github.com/jekyll-bootstrap-3/preview/tree/gh-pages">GitHub</a>
+        </footer>
+      </div>
+
+      <div class="col-sm-9 col-md-10" id="theme-container">
+        <div class="" id="content">
+
+          <div ng-view></div>
+
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
     </div>
 
     <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}js/sizes.js"></script>
