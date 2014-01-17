@@ -8,6 +8,10 @@ function HomeCtrl($scope, JsonService){
       $scope.activeTheme = index;
     }
 
+    $scope.setInfoSize = function(){
+      sizes.setInfoSize();
+    }
+
   });
 
 }

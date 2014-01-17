@@ -7,7 +7,13 @@
 }
 
 body {
-    background-color: #EEE !important;
+    background-color: #ecf0f1 !important;
+}
+
+#info {
+  padding: 20px;
+  background: white;
+  min-height: 500px;
 }
 
 #sidebar {
@@ -39,4 +45,6 @@ body {
   position: absolute;
   bottom: 10px;
   font-size: 13px;
+  text-align: center;
+  width: 100%;
 }

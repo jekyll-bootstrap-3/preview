@@ -11,9 +11,19 @@ layout: default
         [[theme.name]]
       </a>
     </li>
+    <li ng-class="{ active: activeTheme == -1 }">
+      <a href="#/add">
+        <span class="glyphicon glyphicon-plus-sign"></span>
+        Add Your Theme
+      </a>
+    </li>
   </ul>
   <footer id="footer" class="footer container">
     {{ site.time | date: "%Y" }} - {{ site.name }}
+    <br/>
+    <a href="https://jekyll-bootstrap-3.github.io">Jekyll Bootstrap 3</a>
+    &#8226;
+    <a href="https://github.com/jekyll-bootstrap-3/preview/tree/gh-pages">GitHub</a>
   </footer>
 </div>
 

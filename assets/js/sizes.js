@@ -12,5 +12,9 @@ sizes = {
   },
   setSidebarSize: function(){
     document.getElementById('sidebar').style.height = this.getContentHeight()+"px";
+  },
+  setInfoSize: function(){
+    console.log('set info run');
+    document.getElementById('info').style.height = this.getContentHeight()+"px";
   }
 }

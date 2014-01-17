@@ -12,9 +12,12 @@ app.config(function($interpolateProvider) {
   $interpolateProvider.endSymbol(']]');
 });
 
-app.config(function ($routeProvider, $locationProvider) {
+app.config(function ($routeProvider) {
   $routeProvider.when('/theme/:themeName', {
     templateUrl: 'views/theme.html'
+  }).
+  when('/add', {
+    templateUrl: 'views/add.html'
   }).
   otherwise({
     redirectTo: '/theme/Dbyll'
