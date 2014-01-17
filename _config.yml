@@ -1,5 +1,5 @@
 name: Jekyll Bootstrap-3 Theme Preview
 markdown: redcarpet
 
-base_path: '/'
+base_path: ''
 assets_path: 'assets/'
