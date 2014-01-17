@@ -1,17 +1,16 @@
 [
 
   {
-    "name": "Dbyll",
-    "author": "Ismail Demirbilek",
-    "git": "https://github.com/jekyll-bootstrap-3/dbyll",
-    "demo_url": "http://jekyll-bootstrap-3.github.io/dbyll"
-  },
-
-  {
     "name": "Bootstrap",
     "author": "Jekyll Bootstrap",
     "git": "https://github.com/jekyll-bootstrap-3/bootstrap",
     "demo_url": "http://jekyll-bootstrap-3.github.io/bootstrap-theme"
+  },
+  {
+    "name": "Dbyll",
+    "author": "Ismail Demirbilek",
+    "git": "https://github.com/jekyll-bootstrap-3/dbyll",
+    "demo_url": "http://jekyll-bootstrap-3.github.io/dbyll"
   }
 
 ]

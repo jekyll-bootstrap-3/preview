@@ -20,7 +20,7 @@ app.config(function ($routeProvider) {
     templateUrl: 'views/add.html'
   }).
   otherwise({
-    redirectTo: '/theme/Dbyll'
+    redirectTo: '/theme/Bootstrap'
   });
 
 });
