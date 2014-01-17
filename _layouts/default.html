@@ -7,25 +7,24 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ site.base_path }}{{ site.assets_path }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.base_path }}{{ site.assets_path }}css/main.css">
     <!-- Bootswatch -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/spacelab/bootstrap.min.css">
 
-    <script type="text/javascript" src="{{ site.assets_path }}components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="{{ site.assets_path }}components/angular-resource/angular-resource.min.js"></script>
-    <script type="text/javascript" src="{{ site.assets_path }}components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}components/angular-route/angular-route.min.js"></script>
 
-    <script type="text/javascript" src="{{ site.assets_path }}ng/app.js"></script>
-    <script type="text/javascript" src="{{ site.assets_path }}ng/controllers/HomeCtrl.js"></script>
-    <script type="text/javascript" src="{{ site.assets_path }}ng/controllers/ThemeCtrl.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}ng/app.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}ng/controllers/HomeCtrl.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}ng/controllers/ThemeCtrl.js"></script>
   </head>
   <body>
 
     <div id="site" ng-controller="HomeCtrl">
       {{ content }}
-
     </div>
 
-    <script type="text/javascript" src="{{ site.assets_path }}js/sizes.js"></script>
+    <script type="text/javascript" src="{{ site.base_path }}{{ site.assets_path }}js/sizes.js"></script>
   </body>
 </html>
