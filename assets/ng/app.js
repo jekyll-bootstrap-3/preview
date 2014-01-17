@@ -13,8 +13,11 @@ app.config(function($interpolateProvider) {
 });
 
 app.config(function ($routeProvider, $locationProvider) {
-    $routeProvider.when('/theme/:themeName', {
-        templateUrl: 'views/theme.html'
-    });
+  $routeProvider.when('/theme/:themeName', {
+    templateUrl: 'views/theme.html'
+  }).
+  otherwise({
+    redirectTo: '/theme/Dbyll'
+  });
 
 });

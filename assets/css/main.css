@@ -5,3 +5,38 @@
 #content {
   min-height: 600px;
 }
+
+body {
+    background-color: #EEE !important;
+}
+
+#sidebar {
+  padding: 0;
+}
+
+#theme-container {
+  padding-left: 2px;
+}
+
+#sidebar ul li {
+  margin-top: 3px;
+}
+
+#sidebar ul li a {
+  line-height:40px;
+  padding-left: 10px;
+  display: block;
+  background: #bdc3c7;
+  color: white;
+  text-decoration: none;
+}
+
+#sidebar ul li.active a, #sidebar ul li a:hover {
+  background: #2980b9;
+}
+
+#footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 13px;
+}

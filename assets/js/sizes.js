@@ -1,7 +1,6 @@
 sizes = {
   getContentHeight: function(){
-    var footer = document.getElementById('footer');
-    return window.innerHeight - footer.offsetHeight;
+    return window.innerHeight - 5/1000*window.innerHeight;
   },
   setFrameSize: function(){
     var themeFrame = document.getElementById('theme-frame');

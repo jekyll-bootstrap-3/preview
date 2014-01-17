@@ -4,6 +4,7 @@ function ThemeCtrl($scope, $routeParams, $sce){
   angular.forEach($scope.themes, function(val,key){
     if(val.name == $scope.themeName){
       $scope.theme = val;
+      $scope.setTheme(key);
     }
   });
 

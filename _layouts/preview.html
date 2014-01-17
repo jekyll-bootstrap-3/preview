@@ -1,17 +1,24 @@
 ---
 layout: default
 ---
-<div class="col-sm-3" id="sidebar">
-  <h1>Themes</h1>
+<div class="col-sm-3 col-md-2" id="sidebar">
+  <h1 style="padding-left: 5px;">Themes</h1>
   <ul class="list-unstyled">
-    <li ng-repeat="theme in themes">
-      <a href="#/theme/[[theme.name]]" ng-click="setTheme(theme.name);">[[theme.name]]</a>
+
+    <li ng-repeat="theme in themes" ng-class="{ active: activeTheme == $index }">
+      <a href="#/theme/[[theme.name]]" ng-click="setTheme(theme.name);">
+        <span class="glyphicon glyphicon-expand"></span>
+        [[theme.name]]
+      </a>
     </li>
   </ul>
+  <footer id="footer" class="footer container">
+    {{ site.time | date: "%Y" }} - {{ site.name }}
+  </footer>
 </div>
 
-<div class="col-sm-9">
-  <div class="container" id="content">
+<div class="col-sm-9 col-md-10" id="theme-container">
+  <div class="" id="content">
 
     <div ng-view></div>
 

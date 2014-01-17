@@ -3,6 +3,11 @@ function HomeCtrl($scope, JsonService){
     $scope.themes = data;
 
     sizes.setSidebarSize();
+
+    $scope.setTheme = function(index){
+      $scope.activeTheme = index;
+    }
+
   });
 
 }
