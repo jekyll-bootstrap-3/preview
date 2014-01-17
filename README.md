@@ -1,4 +1,6 @@
-preview
+Preview
 =======
 
-Preview themes for Jekyll Bootstrap 3
+Jekyll Bootstrap 3 Themes Gallery.
+
+Add your theme to the gallery by editing ```themes.json```
