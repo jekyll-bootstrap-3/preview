@@ -11,5 +11,5 @@ function ThemeCtrl($scope, $routeParams, $sce){
     return $sce.trustAsResourceUrl(src);
   };
 
-  setFrameSize();
+  sizes.setFrameSize();
 }
