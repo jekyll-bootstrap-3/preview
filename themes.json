@@ -1,5 +1,4 @@
 [
-
   {
     "name": "Bootstrap",
     "author": "Jekyll Bootstrap",
@@ -9,8 +8,8 @@
   {
     "name": "Dbyll",
     "author": "Ismail Demirbilek",
-    "git": "https://github.com/jekyll-bootstrap-3/dbyll",
-    "demo_url": "http://jekyll-bootstrap-3.github.io/dbyll"
+    "git": "https://github.com/jekyll-bootstrap-3/dbyll-theme",
+    "demo_url": "http://jekyll-bootstrap-3.github.io/dbyll-theme"
   },
   {
     "name": "Bootswatch",
